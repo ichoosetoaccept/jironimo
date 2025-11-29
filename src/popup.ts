@@ -7,7 +7,7 @@ async function init() {
   // Get the current tab's URL
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
 
-  if (!tab.url) {
+  if (!tab?.url) {
     showStatus("No active tab", false);
     return;
   }
@@ -22,8 +22,17 @@ async function init() {
 
   if (cookie) {
     sessionCookie = cookie.value;
-    showStatus(`Found cookie for ${url.hostname}`, true);
+    // Auto-copy when cookie is found - true one-click!
+    await navigator.clipboard.writeText(sessionCookie);
+    showStatus(`Copied from ${url.hostname}`, true);
+    copyBtn.textContent = "Copied!";
+    copyBtn.classList.add("copied");
     copyBtn.disabled = false;
+
+    setTimeout(() => {
+      copyBtn.textContent = "Copy JSESSIONID";
+      copyBtn.classList.remove("copied");
+    }, 2000);
   } else {
     showStatus(`No JSESSIONID found on ${url.hostname}`, false);
   }

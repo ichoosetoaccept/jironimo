@@ -11,6 +11,12 @@
       }
     ],
     [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "sed -i 's/\"version\": \"[^\"]*\"/\"version\": \"${nextRelease.version}\"/' src/manifest.json && bun run build && cd dist && zip -r ../jironimo.zip ."
+      }
+    ],
+    [
       "@semantic-release/git",
       {
         "assets": ["CHANGELOG.md", "package.json", "src/manifest.json"],
