@@ -1,0 +1,21 @@
+{
+  "name": "jironimo",
+  "version": "0.1.0",
+  "description": "Copy Jira session cookie for CLI authentication",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "bun run build.ts",
+    "dev": "bun run build && echo 'Load dist/ as unpacked extension in chrome://extensions'"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@types/bun": "latest",
+    "@types/chrome": "^0.1.31",
+    "semantic-release": "^25.0.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
