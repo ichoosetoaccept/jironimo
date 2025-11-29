@@ -10,6 +10,16 @@ When your Jira is behind SSO or a reverse proxy, you can't use API tokens. The j
 
 ## Installation
 
+### Download (Recommended)
+
+1. Download `jironimo.zip` from the [latest release](https://github.com/ichoosetoaccept/jironimo/releases/latest)
+2. Unzip to a folder
+3. Load in Chrome/Vivaldi/Edge:
+   - Go to `chrome://extensions`
+   - Enable "Developer mode"
+   - Click "Load unpacked"
+   - Select the unzipped folder
+
 ### From Source
 
 1. Clone and build:
@@ -20,19 +30,14 @@ When your Jira is behind SSO or a reverse proxy, you can't use API tokens. The j
    bun run build
    ```
 
-2. Load in Chrome/Vivaldi/Edge:
-   - Go to `chrome://extensions`
-   - Enable "Developer mode"
-   - Click "Load unpacked"
-   - Select the `dist/` folder
+2. Load the `dist/` folder as an unpacked extension (see above)
 
 ## Usage
 
 1. Navigate to your Jira instance in the browser
 2. Sign in (authenticate via SSO/certificate as needed)
-3. Click the Jironimo extension icon
-4. Click "Copy JSESSIONID"
-5. Run `jira refresh` and paste when prompted
+3. Click the Jironimo extension icon - the cookie is automatically copied!
+4. Run `jira refresh` and paste when prompted
 
 ## License
 
