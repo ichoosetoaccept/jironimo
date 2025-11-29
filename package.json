@@ -1,6 +1,6 @@
 {
   "name": "jironimo",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Copy Jira session cookie for CLI authentication",
   "type": "module",
   "private": true,

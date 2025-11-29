@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/ichoosetoaccept/jironimo/compare/v1.0.0...v1.1.0) (2025-11-29)
+
+
+### Features
+
+* auto-copy on click and auto-bump manifest version ([856e99c](https://github.com/ichoosetoaccept/jironimo/commit/856e99c52d4d9bae49ba423504c0986421f2a7fa))
+
 # 1.0.0 (2025-11-29)
 
 

@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Jironimo",
   "description": "Copy Jira session cookie for CLI authentication",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "permissions": ["cookies", "activeTab"],
   "host_permissions": ["*://*/*"],
   "action": {
