@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/ichoosetoaccept/jironimo/compare/v1.1.0...v1.1.1) (2025-11-29)
+
+
+### Bug Fixes
+
+* delay auto-copy to ensure popup is focused ([aa140de](https://github.com/ichoosetoaccept/jironimo/commit/aa140deb1e09298ef502228271bf023dba51d6e3))
+
 # [1.1.0](https://github.com/ichoosetoaccept/jironimo/compare/v1.0.0...v1.1.0) (2025-11-29)
 
 
