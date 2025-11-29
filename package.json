@@ -9,6 +9,7 @@
     "dev": "bun run build && echo 'Load dist/ as unpacked extension in chrome://extensions'"
   },
   "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@types/bun": "latest",
