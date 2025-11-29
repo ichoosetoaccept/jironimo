@@ -19,7 +19,7 @@ jobs:
 
       - uses: oven-sh/setup-bun@v2
 
-      - run: bun install --frozen-lockfile=false
+      - run: bun install --no-frozen-lockfile
 
       - name: Build extension
         run: bun run build
